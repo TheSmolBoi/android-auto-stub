@@ -1,0 +1,5 @@
+android_app_import {
+    name: "speechservicestub",
+    apk: "speech-services-stub.apk",
+    certificate: "PRESIGNED",
+}

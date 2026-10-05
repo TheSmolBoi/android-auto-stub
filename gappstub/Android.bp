@@ -1,0 +1,5 @@
+android_app_import {
+    name: "gappsstub",
+    apk: "gappsstub.apk",
+    certificate: "PRESIGNED",
+}

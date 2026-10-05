@@ -1,0 +1,20 @@
+prebuilt_etc {
+    name: "privapp-permissions-com.google.android.projection.gearhead.xml",
+    sub_dir: "permissions",
+    src: "privapp-permissions-com.google.android.projection.gearhead.xml",
+    required: ["default-permissions.xml"],
+}
+
+prebuilt_etc {
+    name: "default-permissions.xml",
+    sub_dir: "default-permissions",
+    src: "default-permissions.xml",
+}
+
+android_app_import {
+    name: "AndroidAuto",
+    apk: "AndroidAutoStubPrebuilt.apk",
+    privileged: true,
+    certificate: "PRESIGNED",
+    required: ["privapp-permissions-com.google.android.projection.gearhead.xml"],
+}
