@@ -1,5 +1,9 @@
 android_app_import {
     name: "gappsstub",
+    product_specific: true,
     apk: "gappsstub.apk",
-    certificate: "PRESIGNED",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
 }
