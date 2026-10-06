@@ -1,5 +1,9 @@
 android_app_import {
     name: "speechservicestub",
+    product_specific: true,
     apk: "speech-services-stub.apk",
-    certificate: "PRESIGNED",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
 }
