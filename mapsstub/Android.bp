@@ -1,0 +1,10 @@
+android_app_import {
+    name: "mapsstub",
+    product_specific: true,
+    apk: "mapsstub.apk",
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
