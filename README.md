@@ -2,7 +2,7 @@
 
 - stock AndroidAutoStub extracted from [NikGapps](https://nikgapps.com/)
 - custom built Google Search App and Google Speech Services Stubs
-
+- Google Maps Stub extracted form [aa4mg module](https://github.com/sn-00-x/aa4mg)
 
 ## Build with [docker-lineage-cicd](https://github.com/lineageos4microg/docker-lineage-cicd)
 This was build and tested on LineageOS for microG 23.2 (build target bramble) on a Pixel 4a 5G.
@@ -15,9 +15,9 @@ Add this to your manifests:
 </manifest>
 ```
 
-Add these three apps to your CUSTOM_PACKAGES environment variable:
+Add these four apps to your CUSTOM_PACKAGES environment variable:
 ```
-CUSTOM_PACKAGES: AndroidAuto gappsstub speechservicestub
+CUSTOM_PACKAGES: AndroidAuto gappsstub speechservicestub mapsstub
 ```
 
 Add this to your ```before.sh``` in your userscripts directory:
@@ -57,7 +57,8 @@ if you are having trouble with first time setup, I found it was helpful to setup
 sources for custom built stubs with build instructions for each of the stubs:
 - [speechservicesstub](https://github.com/SolidEva/SpeechServices-Package-Spoof)
 - [gappsstub](https://github.com/SolidEva/Gapp-Package-Spoof)
+- [mapsstub](https://github.com/sn-00-x/aa4mg/tree/master/system/product/app/Maps)
 
 ## Thanks
 big thanks to @dylangerdaly and the thread [here](https://github.com/microg/GmsCore/issues/897)
-
+thank you to @SolidEva and @sn-00-x for their repositories providing the required files and inspiration
